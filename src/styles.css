@@ -1,0 +1,184 @@
+/* Toàn bộ trang */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    box-sizing: border-box;
+    overflow: hidden; /* Không hiển thị thanh cuộn */
+  }
+  
+  /* Container chính */
+  .container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+    animation: slideUp 0.8s ease-out;
+  }
+  
+  /* Tiêu đề */
+  h1 {
+    color: #4285f4;
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Hiệu ứng fadeIn cho tiêu đề */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hiệu ứng slideUp cho container */
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Phần chọn ngôn ngữ */
+  .select-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  label:hover {
+    color: #4285f4;
+  }
+  
+  select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  select:hover {
+    border-color: #4285f4;
+    transform: scale(1.05);
+  }
+  
+  /* Phần nhập liệu cho từ */
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #4285f4;
+    transform: scale(1.03);
+  }
+  
+  input::placeholder {
+    color: #aaa;
+    transition: color 0.3s ease;
+  }
+  
+  input:focus::placeholder {
+    color: #4285f4;
+  }
+  
+  /* Nút dịch */
+  button {
+    background-color: #4285f4;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3367d6;
+    transform: scale(1.05);
+  }
+  
+  /* Phần kết quả dịch */
+  textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 120px;
+    resize: none;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  textarea:focus {
+    border-color: #4285f4;
+    transform: scale(1.03);
+  }
+  
+  /* Hiệu ứng hover cho các phần tử */
+  textarea:hover,
+  input:hover,
+  select:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Hiệu ứng vết sáng khi di chuột lên các input và textarea */
+  input:focus,
+  textarea:focus,
+  select:focus {
+    box-shadow: 0 0 8px rgba(66, 133, 244, 0.7);
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+  }
+  
